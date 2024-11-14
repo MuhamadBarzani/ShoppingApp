@@ -1,4 +1,3 @@
-
 class CartItem {
   final String id;
   final String name;
@@ -33,7 +32,7 @@ class CartItem {
       name: map['name'] as String,
       price: double.parse(map['price'].toString()),
       imageUrl: map['url'] as String,
-      option: map['options'].toString(),
+      option: map['option'] as String,  // Fixed from 'options' to 'option'
       category: map['category'] as String,
     );
   }
